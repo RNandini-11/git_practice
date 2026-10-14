@@ -1,0 +1,86 @@
+Git:
+----
+- free and open-source distributed version control system that is responsible for everything Git-related that happens locally on your computer.
+- version control system
+    - If you're committing some code, you can track it
+    - I made a few changes in the first commit. In the next commit, I added more code. So, it tracks everything. 
+- Github repositories are where I'll check in, and what I'm doing through Git is I'm creating a version control system, so that I'll be able to reference everything in the Git.
+
+
+create README.md file:
+- 
+
+
+commands:
+--------
+
+1. git init:
+    - initialize existing directory as git repo
+    - automatically make .git folder in which general configration and which is hidden folder
+2. git add README.md:
+    - get tracked file from untracked file
+    - get symbol 'U' means "untracked file" because we cannot add
+    - after this command this symbol in 'A' means "added"
+    - to remove: git rm --cached <file>
+3. git commit -m "first commit"
+    - commit your staged content as a new commit snapshot
+4. git branch -M main 
+    - rename your branch in "main" 
+    - not compulsary
+5. git branch
+    - list your branches. 
+    - a * will appear next to the currently active branch
+6. git remote add origin https://github.com/RNandini-11/git_practice.git
+    - give destination repo url
+7. git remote -v
+    - Show remote repository URLs
+8. git push -u origin main
+    - Upload commits to GitHub.
+    - push code to origin from main
+
+- git config --global user.name “[firstname lastname]”
+
+Easy trick: Add → Commit → Push.
+- add = Select changes.
+- commit = Save changes locally.
+- push = Upload commits to GitHub.
+
+but default git make branches automatically 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+…or create a new repository on the command line
+-----------------------------------------------
+
+- echo "# git_practice" >> README.md
+- git init 
+- git add README.md
+- git commit -m "first commit"
+- git branch -M main
+- git remote add origin https://github.com/RNandini-11/git_practice.git
+- git push -u origin main
+
+
+…or push an existing repository from the command line
+-----------------------------------------------------
+
+- git remote add origin https://github.com/RNandini-11/git_practice.git
+- git branch -M main
+- git push -u origin main
