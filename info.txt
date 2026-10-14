@@ -37,7 +37,40 @@ commands:
 8. git push -u origin main
     - Upload commits to GitHub.
     - push code to origin from main
+9. git status
+    - Check file changes
 
+-----------------------------------------------------
+
+make one file app.py
+- git status 
+    - check file changes
+    - using this we can check files added or not
+- git add . - for all files
+    - git add <file_name> - for specific
+- git commit -m "msg"
+- git push -u origin main 
+
+---------------------------------------------------------------
+
+make file from .gitignore on github:
+- git pull origin main
+    - but this file not present local folder so need to pull
+    - importance of .gitignore file:
+        - prevent specific files from being committed
+        - If you don't want to send any specific file or folder to the GitHub repository , 
+        - you can write that information here. 
+- uv venv venv --python 3.12
+    - no need to push on github because of big size
+    - .venv -> because is big size 
+        - create a different environment for different projects
+        - I only need to use a set of libraries for this particular project.
+        - and install that set of libraries for this particular environment.
+        - and i will not install any other libraries
+- venv\Scripts\activate
+- 
+
+-------------------------------------------------------------------------
 - git config --global user.name “[firstname lastname]”
 
 Easy trick: Add → Commit → Push.
@@ -47,6 +80,34 @@ Easy trick: Add → Commit → Push.
 
 but default git make branches automatically 
 
+---------------------------------------------------------------------
+
+Branching Strategies:
+---------------------
+
+- git branch -> Lists local branches
+
+now make another branch names 'developer-a'
+now here developer-a want to chnage or add some code.
+then switch branch main to developer-a then change that code.
+
+- git branch developer-a -> developer-a create story add add div() in python file in main branch	
+    - Creates a new branch
+    - exact replica of main branch
+- git switch developer-a	-> Switches to a branch
+- git branch --> see active branch now developer-a
+
+change code in file
+- git status with U symbol
+- git add .
+- git status with A symbol
+- git commit -m "developer story" 
+
+now complete work as a 'developer-a' and merge this branch with 'main'
+- git switch main
+    - then is remove that file because this div() i not write in 'main' branch because we write in 'developer-a'
+    - so we merge two branch
+- git merge developer-a
 
 
 
